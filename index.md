@@ -1,2 +1,2 @@
-##Greeting
+## Greeting: 
 ***Hello, world!***
