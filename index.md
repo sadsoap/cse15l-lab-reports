@@ -1,4 +1,4 @@
-## Greeting: 
+## Greeting from Sophia Davis: 
 ***Hello, world!***
 
 ## Lab Reports:
