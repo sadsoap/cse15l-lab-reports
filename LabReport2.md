@@ -5,7 +5,7 @@
 ### StringServer.java code:
 ![Image](scLR2/StringServerCode.png)
 
-no text about the code
+
 
 ### Adding "Hello!": 
 ![Image](scLR2/StringServerHello.png)
@@ -64,4 +64,24 @@ are `iNum`, `url` and `sCurrent`, since the latter two are evaluating
 a string that does or will contain "How are you today?" specifically,
 and `iNum` is incremented. The other values remain unchanged after this
 request, because they relate to the server running itself, not the
-query request being handled. 
+query request being handled.
+
+## Part 2
+
+### `ls` to the *private* key:
+
+
+### `ls` to the *public* key:
+
+
+### Logging into `ieng6` without a password:
+
+
+## Part 3
+
+In this lab, I learned how to copy files from one server to another, 
+to make a directory, and how to build and run a server. `scp` is
+used for the first, `mkdir` is used for the second, and the last 
+is done through a combination of commands, including but not limited 
+to: `git clone`, `javac`, and `java`. In our case, it is also required
+that you make a corresponding repository on GitHub.
