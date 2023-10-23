@@ -69,12 +69,13 @@ query request being handled.
 ## Part 2
 
 ### `ls` to the *private* key:
-
+![Image](scLR2/pathPrivateKey.png)
 
 ### `ls` to the *public* key:
-
+![Image](scLR2/pathPublicKey.png)
 
 ### Logging into `ieng6` without a password:
+![Image](scLR2/logOnNoPassword.png)
 
 
 ## Part 3
