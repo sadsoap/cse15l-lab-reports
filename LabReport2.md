@@ -10,11 +10,6 @@ no text about the code
 ### Adding "Hello!": 
 ![Image](scLR2/StringServerHello.png)
 
-What methods are called? What are the relevant arguments,
-and the values of any relevant fields of the class? How 
-do the values of any relevant fields of the class change
-from this specific request?
-
 * The primary method being called in terminal is `StringServer`,
 but there are many methods nested inside that allow for the
 results to show. Inside the definition of `StringServer`, there
@@ -26,10 +21,10 @@ the display results.
 1.For `StringServer`: a single argument, a string array that
 contains the desired port number. Has one local variable, integer
 `port` which holds the user's input as an integer.
-2. For `Handler`: no arguments, but has two local variables, string
+  2. For `Handler`: no arguments, but has two local variables, string
 `sCurrent` and integer `iNum` which hold the string to be displayed
 and the integer counting the lines added respectively.
-3. For `handleRequest`: a single argument, a URI variable `url` that
+  3. For `handleRequest`: a single argument, a URI variable `url` that
 contains the current url to the server site. Has three relevant
 values, the variables `sCurrent` and `iNum` local to `Handler`,
 and a string array `parameters` that holds strings deliminated by
@@ -51,10 +46,10 @@ as above:<br>
 1.For `StringServer`: a single argument, a string array that
 contains the desired port number. Has one local variable, integer
 `port` which holds the user's input as an integer.
-2. For `Handler`: no arguments, but has two local variables, string
+  2. For `Handler`: no arguments, but has two local variables, string
 `sCurrent` and integer `iNum` which hold the string to be displayed
 and the integer counting the lines added respectively.
-3. For `handleRequest`: a single argument, a URI variable `url` that
+  3. For `handleRequest`: a single argument, a URI variable `url` that
 contains the current url to the server site. Has three relevant
 values, the variables `sCurrent` and `iNum` local to `Handler`,
 and a string array `parameters` that holds strings deliminated by
