@@ -76,7 +76,8 @@ query request being handled.
 
 ### Logging into `ieng6` without a password:
 ![Image](scLR2/logOnNoPassword.png)
-*Note: I apologies for the large series of "quota" messages in the middle, I am not sure what caused that.*
+
+*Note: I apologize for the large series of "quota" messages in the middle, I am not sure what caused that.*
 
 
 ## Part 3
