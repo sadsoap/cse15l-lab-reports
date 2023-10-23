@@ -42,20 +42,23 @@ the server running itself, not the query request being handled.
 ![Image](scLR2/StringServerHowAreYouToday.png)
 
 * The same methods are being called here as the above string:
-`StringServer`, `Handler`, and `handleRequest`. 
+`StringServer`, `Handler`, and `handleRequest`.
+
 * The relevant arguments/values are as follows, which are the same
-as above:<br>
-1.For `StringServer`: a single argument, a string array that
+as above:
+
+1. For `StringServer`: a single argument, a string array that
 contains the desired port number. Has one local variable, integer
-`port` which holds the user's input as an integer.<br>
-  2. For `Handler`: no arguments, but has two local variables, string
+`port` which holds the user's input as an integer.
+2. For `Handler`: no arguments, but has two local variables, string
 `sCurrent` and integer `iNum` which hold the string to be displayed
-and the integer counting the lines added respectively.<br>
-  3. For `handleRequest`: a single argument, a URI variable `url` that
+and the integer counting the lines added respectively.
+3. For `handleRequest`: a single argument, a URI variable `url` that
 contains the current url to the server site. Has three relevant
 values, the variables `sCurrent` and `iNum` local to `Handler`,
 and a string array `parameters` that holds strings deliminated by
 an "=" after the query mark in the url.
+
 * Again, for this specific request, the only values that are affected
 are `iNum`, `url` and `sCurrent`, since the latter two are evaluating
 a string that does or will contain "How are you today?" specifically,
