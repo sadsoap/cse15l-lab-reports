@@ -20,10 +20,10 @@ the display results.
 * Relevant arguments/values <br>
 1.For `StringServer`: a single argument, a string array that
 contains the desired port number. Has one local variable, integer
-`port` which holds the user's input as an integer.
+`port` which holds the user's input as an integer. <br>
   2. For `Handler`: no arguments, but has two local variables, string
 `sCurrent` and integer `iNum` which hold the string to be displayed
-and the integer counting the lines added respectively.
+and the integer counting the lines added respectively.<br>
   3. For `handleRequest`: a single argument, a URI variable `url` that
 contains the current url to the server site. Has three relevant
 values, the variables `sCurrent` and `iNum` local to `Handler`,
@@ -45,10 +45,10 @@ the server running itself, not the query request being handled.
 as above:<br>
 1.For `StringServer`: a single argument, a string array that
 contains the desired port number. Has one local variable, integer
-`port` which holds the user's input as an integer.
+`port` which holds the user's input as an integer.<br>
   2. For `Handler`: no arguments, but has two local variables, string
 `sCurrent` and integer `iNum` which hold the string to be displayed
-and the integer counting the lines added respectively.
+and the integer counting the lines added respectively.<br>
   3. For `handleRequest`: a single argument, a URI variable `url` that
 contains the current url to the server site. Has three relevant
 values, the variables `sCurrent` and `iNum` local to `Handler`,
