@@ -22,7 +22,7 @@ is a call for `new Handler()` which has most of our working
 methods inside it. The primary method in the Handler class
 is `handleRequest`, which processes the url input and returns
 the display results.
-* Relevant arguments/values
+* Relevant arguments/values <br>
 1.For `StringServer`: a single argument, a string array that
 contains the desired port number. Has one local variable, integer
 `port` which holds the user's input as an integer.
@@ -47,7 +47,7 @@ the server running itself, not the query request being handled.
 * The same methods are being called here as the above string:
 `StringServer`, `Handler`, and `handleRequest`. 
 * The relevant arguments/values are as follows, which are the same
-as above:
+as above:<br>
 1.For `StringServer`: a single argument, a string array that
 contains the desired port number. Has one local variable, integer
 `port` which holds the user's input as an integer.
