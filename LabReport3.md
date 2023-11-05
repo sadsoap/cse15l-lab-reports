@@ -120,6 +120,8 @@ technical/government/Media/Barnes_pro_bono.txt
 technical/government/Media/Barnes_Volunteers.txt
 
 ```
+
+
 *Note: Because of the nature of this option, and the
 environment that I am presenting the information in, the
 text does not actually change in color. When I ran these
@@ -134,7 +136,8 @@ for a match. This could prove especially useful to confirm
 you aren't make any sort of case-sensitivity mistakes,
 typos, or a search phrase that is too vague/general.
 
-* `-v, --invert-match` 
+* `-v, --invert-match`
+
 ```
 #Test 1 command
 bash optionTest.sh technical/911report -v "chapter"
@@ -300,6 +303,7 @@ technical/plos/pmed.0020278.txt
 technical/plos/pmed.0020281.txt
 
 ```
+
 This option ignores the usual output, and instead prints
 all of the lines that did _not_ match the given
 text/phrase. One scenario where this could be useful is
@@ -307,7 +311,8 @@ if you needed to exclude a certain section or if you want
 to compare the non-matching lines without also having to
 look at the matching ones.
 
-* `-m<NUM>, --max-count=<NUM>` 
+* `-m<NUM>, --max-count=<NUM>`
+
 ```
 #Test 1 command
 bash optionTest.sh technical/plos -m10 "pmed"
@@ -335,6 +340,7 @@ technical/biomed/1471-2180-2-2.txt
 technical/biomed/1471-2180-2-20.txt
 
 ```
+
 This option sets a cap for the number of matched lines
 printed, up to the amount designated by the user. This
 would be incredibly useful for files with a lot of text
@@ -344,7 +350,8 @@ participant at a gynastics meet, but you only want to
 list the top ten gymnasts with the last name "Smith",
 you could use `grep -m10 "Smith" <file name>`.
 
-* `-c, --count` 
+* `-c, --count`
+
 ```
 #Test 1 command
 find technical/plos > inPlos.txt
@@ -367,6 +374,7 @@ inBiomed.txt:101
 inGovernment.txt:28
 
 ```
+
 This option ignores the usual output and instead prints a
 count of how many lines match, per input file. This would
 be useful especially with a series of files likely to
