@@ -70,7 +70,7 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```
-Before the fix, the method would overwrite the values in the array that need to be assigned to a new index, producing "reversed" array with incorrect values. After the fix, the original value of an element is preseved in a temporary variable, and then swapped with the value in the element of intended index. This for loop is only iterated through half of the the array length, since the values are being "swapped" instead of just being overwritten.
+Before the fix, the method would overwrite the values in the array that need to be assigned to a new index, producing a "reversed" array with incorrect values. After the fix, the original value of an element is preseved in a temporary variable, and then swapped with the value in the element of the intended index. Using this method, only half of the array's length is iterated through, since the values are being "swapped" instead of just being overwritten.
 
 
 
