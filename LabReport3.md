@@ -5,16 +5,16 @@ For my bug, I have chosen the `reverseInPlace` method in the `ArrayExamples.java
 
 ### Failing input:
 ```java
-//Buggy method from ArrayExamples.java
+#Buggy method from ArrayExamples.java
 
-// Changes the input array to be in reversed order
+# Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
   }
 
-//JUnit test with failing input from ArrayTests.java
+#JUnit test with failing input from ArrayTests.java
 
 @Test 
 	public void testReverseInPlaceA() {
@@ -26,16 +26,16 @@ For my bug, I have chosen the `reverseInPlace` method in the `ArrayExamples.java
 
 ### Passing input:
 ```java
-//Buggy method from ArrayExamples.java
+#Buggy method from ArrayExamples.java
 
-// Changes the input array to be in reversed order
+# Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
   }
 
-//JUnit test with passing input from ArrayTests.java
+#JUnit test with passing input from ArrayTests.java
 
 @Test 
 	public void testReverseInPlace() {
@@ -51,7 +51,7 @@ For my bug, I have chosen the `reverseInPlace` method in the `ArrayExamples.java
 
 ### The bug, before and after fixing:
 ```java
-//The method 'reverseInPlace' with no changes, before fixing
+#The method 'reverseInPlace' with no changes, before fixing
 
   static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
@@ -59,7 +59,7 @@ For my bug, I have chosen the `reverseInPlace` method in the `ArrayExamples.java
     }
   }
 
-//The method 'reverseInPlace' with changes, after fixing
+#The method 'reverseInPlace' with changes, after fixing
 
 static void reverseInPlace(int[] arr) {
     int temp = 0;
@@ -77,7 +77,7 @@ Before the fix, the method would overwrite the values in the array that need to 
 ## Part 2 - Researching Commands
 I have chosen to research the `grep` command. 
 
-_Note: For simplicity's sake, and to avoid having to do too much repition, I used the following bash script for my first three command options._
+*Note: For simplicity's sake, and to avoid having to do too much repition, I used the following bash script for my first three command options.*
 ```
 # optionTest.sh
 find $1 > optionSearchResults.txt
@@ -87,10 +87,10 @@ grep $2 "$3" optionSearchResults.txt
 ### `grep` command options:
 * `--color` 
 ```
-//Test 1 command
+#Test 1 command
 $ bash optionTest.sh technical/911report --color r-1
 
-//Test 1 output
+#Test 1 output
 technical/911report/chapter-1.txt
 technical/911report/chapter-10.txt
 technical/911report/chapter-11.txt
@@ -101,32 +101,32 @@ technical/911report/chapter-13.3.txt
 technical/911report/chapter-13.4.txt
 technical/911report/chapter-13.5.txt
 
-//Test 2 command
+#Test 2 command
 bash optionTest.sh technical/government/Media --color Barnes
 
-//Test 2 output
+#Test 2 output
 technical/government/Media/Barnes_new_job.txt
 technical/government/Media/Barnes_pro_bono.txt
 technical/government/Media/Barnes_Volunteers.txt
 
 ```
-_Note: Because of the nature of this option, and the environment that I am presenting the information in, the text does not actually change in color. When I ran these tests, the respective search/match arguments in each result were changed to the color red. (e.g. In test 1, the "r-1" at the end of "chapter" and "Barnes" after "Media/" in test 2._
+*Note: Because of the nature of this option, and the environment that I am presenting the information in, the text does not actually change in color. When I ran these tests, the respective search/match arguments in each result were changed to the color red. (e.g. In test 1, the "r-1" at the end of "chapter" and "Barnes" after "Media/" in test 2.*
 
 This option changes the color of the text/phrase used to match, making it very clear to see why a file was selected for a match. This could prove especially useful to confirm you aren't make any sort of case-sensitivity mistakes, typos, or a search phrase that is too vague/general.
 
 * `-v, --invert-match` 
 ```
-//Test 1 command
+#Test 1 command
 bash optionTest.sh technical/911report -v "chapter"
 
-//Test 1 output
+#Test 1 output
 technical/911report
 technical/911report/preface.txt
 
-//Test 2 command
+#Test 2 command
 bash optionTest.sh technical/plos -v "journal"
 
-//Test 2 output
+#Test 2 output
 technical/plos
 technical/plos/pmed.0010008.txt
 technical/plos/pmed.0010010.txt
@@ -284,10 +284,10 @@ This option ignores the usual output, and instead prints all of the lines that d
 
 * `-m<NUM>, --max-count=<NUM>` 
 ```
-//Test 1 command
+#Test 1 command
 bash optionTest.sh technical/plos -m10 "pmed"
 
-//Test 1 output
+#Test 1 output
 technical/plos/pmed.0010008.txt
 technical/plos/pmed.0010010.txt
 technical/plos/pmed.0010013.txt
@@ -299,10 +299,10 @@ technical/plos/pmed.0010025.txt
 technical/plos/pmed.0010026.txt
 technical/plos/pmed.0010028.txt
 
-//Test 2 command
+#Test 2 command
 bash optionTest.sh technical/biomed -m5 "2180-2"
 
-//Test 2 output
+#Test 2 output
 technical/biomed/1471-2180-2-1.txt
 technical/biomed/1471-2180-2-13.txt
 technical/biomed/1471-2180-2-16.txt
@@ -314,22 +314,22 @@ This option sets a cap for the number of matched lines printed, up to the amount
 
 * `-c, --count` 
 ```
-//Test 1 command
+#Test 1 command
 find technical/plos > inPlos.txt
 find technical/biomed > inBiomed.txt
 find technical/government > inGovernment.txt
 grep -c ".txt" inPlos.txt inBiomed.txt inGovernment.txt
 
 
-//Test 1 output
+#Test 1 output
 inPlos.txt:252
 inBiomed.txt:837
 inGovernment.txt:285
 
-//Test 2 command
+#Test 2 command
 grep -c "02" inPlos.txt inBiomed.txt inGovernment.txt
 
-//Test 2 output
+#Test 2 output
 inPlos.txt:208
 inBiomed.txt:101
 inGovernment.txt:28
