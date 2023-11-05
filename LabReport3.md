@@ -70,14 +70,23 @@ static void reverseInPlace(int[] arr) {
     }
   }
 ```
-Before the fix, the method would overwrite the values in the array that need to be assigned to a new index, producing a "reversed" array with incorrect values. After the fix, the original value of an element is preseved in a temporary variable, and then swapped with the value in the element of the intended index. Using this method, only half of the array's length is iterated through, since the values are being "swapped" instead of just being overwritten.
-
+Before the fix, the method would overwrite the values
+in the array that need to be assigned to a new index,
+producing a "reversed" array with incorrect values.
+After the fix, the original value of an element is
+preseved in a temporary variable, and then swapped with
+the value in the element of the intended index. Using
+this method, only half of the array's length is
+iterated through, since the values are being "swapped"
+instead of just being overwritten.
 
 
 ## Part 2 - Researching Commands
 I have chosen to research the `grep` command. 
 
-*Note: For simplicity's sake, and to avoid having to do too much repition, I used the following bash script for my first three command options.*
+*Note: For simplicity's sake, and to avoid having to do
+too much repition, I used the following bash script for
+my first three command options.*
 ```
 # optionTest.sh
 find $1 > optionSearchResults.txt
@@ -111,9 +120,19 @@ technical/government/Media/Barnes_pro_bono.txt
 technical/government/Media/Barnes_Volunteers.txt
 
 ```
-*Note: Because of the nature of this option, and the environment that I am presenting the information in, the text does not actually change in color. When I ran these tests, the respective search/match arguments in each result were changed to the color red. (e.g. In test 1, the "r-1" at the end of "chapter" and "Barnes" after "Media/" in test 2.*
+*Note: Because of the nature of this option, and the
+environment that I am presenting the information in, the
+text does not actually change in color. When I ran these
+tests, the respective search/match arguments in each
+result were changed to the color red. (e.g. In test 1, the
+"r-1" at the end of "chapter" and "Barnes" after "Media/"
+in test 2.*
 
-This option changes the color of the text/phrase used to match, making it very clear to see why a file was selected for a match. This could prove especially useful to confirm you aren't make any sort of case-sensitivity mistakes, typos, or a search phrase that is too vague/general.
+This option changes the color of the text/phrase used to
+match, making it very clear to see why a file was selected
+for a match. This could prove especially useful to confirm
+you aren't make any sort of case-sensitivity mistakes,
+typos, or a search phrase that is too vague/general.
 
 * `-v, --invert-match` 
 ```
@@ -281,7 +300,12 @@ technical/plos/pmed.0020278.txt
 technical/plos/pmed.0020281.txt
 
 ```
-This option ignores the usual output, and instead prints all of the lines that did _not_ match the given text/phrase. One scenario where this could be useful is if you needed to exclude a certain section or if you want to compare the non-matching lines without also having to look at the matching ones.
+This option ignores the usual output, and instead prints
+all of the lines that did _not_ match the given
+text/phrase. One scenario where this could be useful is
+if you needed to exclude a certain section or if you want
+to compare the non-matching lines without also having to
+look at the matching ones.
 
 * `-m<NUM>, --max-count=<NUM>` 
 ```
@@ -311,7 +335,14 @@ technical/biomed/1471-2180-2-2.txt
 technical/biomed/1471-2180-2-20.txt
 
 ```
-This option sets a cap for the number of matched lines printed, up to the amount designated by the user. This would be incredibly useful for files with a lot of text and are sorted or ranked in some way. For example, if you were looking at a file containing the rankings of every participant at a gynastics meet, but you only want to list the top ten gymnasts with the last name "Smith", you could use `grep -m10 "Smith" <file name>`.
+This option sets a cap for the number of matched lines
+printed, up to the amount designated by the user. This
+would be incredibly useful for files with a lot of text
+and are sorted or ranked in some way. For example, if you
+were looking at a file containing the rankings of every
+participant at a gynastics meet, but you only want to
+list the top ten gymnasts with the last name "Smith",
+you could use `grep -m10 "Smith" <file name>`.
 
 * `-c, --count` 
 ```
@@ -336,4 +367,10 @@ inBiomed.txt:101
 inGovernment.txt:28
 
 ```
-This option ignores the usual output and instead prints a count of how many lines match, per input file. This would be useful especially with a series of files likely to contain large numbers of matches. For example, you could use it to search multiple hospitals' staff directories for the number of doctors, and display total doctors at each hospital. 
+This option ignores the usual output and instead prints a
+count of how many lines match, per input file. This would
+be useful especially with a series of files likely to
+contain large numbers of matches. For example, you could
+use it to search multiple hospitals' staff directories for
+the number of doctors, and display total doctors at each
+hospital. 
