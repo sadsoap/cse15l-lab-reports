@@ -85,7 +85,8 @@ grep $2 "$3" optionSearchResults.txt
 ```
 
 ### `grep` command options:
-* `--color` 
+* `--color`
+
 ```
 #Test 1 command
 $ bash optionTest.sh technical/911report --color r-1
@@ -310,7 +311,7 @@ technical/biomed/1471-2180-2-2.txt
 technical/biomed/1471-2180-2-20.txt
 
 ```
-This option sets a cap for the number of matched lines printed, up to the amount designated by the user. This would be incredibly useful for files with a lot of text and are sorted or ranked in some way. For example, if you were looking at a file containing the rankings of every participant at a gynastics meet, but you only want to list the top ten gymnasts with the last name "Smith", you could use `grep -m 10 "Smith" <file name>`.
+This option sets a cap for the number of matched lines printed, up to the amount designated by the user. This would be incredibly useful for files with a lot of text and are sorted or ranked in some way. For example, if you were looking at a file containing the rankings of every participant at a gynastics meet, but you only want to list the top ten gymnasts with the last name "Smith", you could use `grep -m10 "Smith" <file name>`.
 
 * `-c, --count` 
 ```
