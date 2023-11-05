@@ -3,7 +3,7 @@
 ## Part 1 - Bugs
 For my bug, I have chosen the `reverseInPlace` method in the `ArrayExamples.java` file. 
 
-Failing input:
+### Failing input:
 ```java
 //Buggy method from ArrayExamples.java
 
@@ -24,7 +24,7 @@ Failing input:
 	}
 ```
 
-Passing input:
+### Passing input:
 ```java
 //Buggy method from ArrayExamples.java
 
@@ -46,10 +46,10 @@ Passing input:
 
 ```
 
-Symptoms:
+### Symptoms:
 ![Image](scLR3/BugSymptoms.png)
 
-The bug, before and after fixing:
+### The bug, before and after fixing:
 ```java
 //The method 'reverseInPlace' with no changes, before fixing
 
