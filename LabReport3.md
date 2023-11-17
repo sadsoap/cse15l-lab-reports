@@ -84,8 +84,7 @@ instead of just being overwritten.
 ## Part 2 - Researching Commands
 I have chosen to research the `grep` command, and used
 one website to learn about each of the four command
-options I used. It is linked [here](https://man7.org/linux/man-pages/man1/grep.1.html), but I will also link
-it at the end of every section for each option. (I used
+options I used. It is located at [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html), but I will also provide the url at the end of every section for each option. (I used
 the Linux manual page.)
 
 *Note: For simplicity's sake, and to avoid having to do
@@ -124,22 +123,25 @@ technical/government/Media/Barnes_pro_bono.txt
 technical/government/Media/Barnes_Volunteers.txt
 
 ```
+**Test 1 output:**
 
+![Image](scLR3/grepColorOutputTest1.png)
+
+**Test 2 output:**
+
+![Image](scLR3/grepColorOutputTest2.png)
 
 *Note: Because of the nature of this option, and the
 environment that I am presenting the information in, the
-text does not actually change in color. When I ran these
-tests, the respective search/match arguments in each
-result were changed to the color red. (e.g. In test 1, the
-"r-1" at the end of "chapter" and "Barnes" after "Media/"
-in test 2.*
+text does not actually change in color in the code blocks. The above screenshots are provided to show the color change in the output.*
 
 This option changes the color of the text/phrase used to
 match, making it very clear to see why a file was selected
 for a match. This could prove especially useful to confirm
 you aren't make any sort of case-sensitivity mistakes,
 typos, or a search phrase that is too vague/general.
-[Source: grep(1)--Linux manual page](https://man7.org/linux/man-pages/man1/grep.1.html)
+
+Source: [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)
 
 
 * `-v, --invert-match`
@@ -316,7 +318,8 @@ text/phrase. One scenario where this could be useful is
 if you needed to exclude a certain section or if you want
 to compare the non-matching lines without also having to
 look at the matching ones.
-[Source: grep(1)--Linux manual page](https://man7.org/linux/man-pages/man1/grep.1.html)
+
+Source: [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)
 
 
 * `-m<NUM>, --max-count=<NUM>`
@@ -357,7 +360,8 @@ were looking at a file containing the rankings of every
 participant at a gynastics meet, but you only want to
 list the top ten gymnasts with the last name "Smith",
 you could use `grep -m10 "Smith" <file name>`.
-[Source: grep(1)--Linux manual page](https://man7.org/linux/man-pages/man1/grep.1.html)
+
+Source: [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)
 
 
 * `-c, --count`
@@ -392,4 +396,5 @@ contain large numbers of matches. For example, you could
 use it to search multiple hospitals' staff directories for
 the number of doctors, and display total doctors at each
 hospital. 
-[Source: grep(1)--Linux manual page](https://man7.org/linux/man-pages/man1/grep.1.html)
+
+Source: [https://man7.org/linux/man-pages/man1/grep.1.html](https://man7.org/linux/man-pages/man1/grep.1.html)
