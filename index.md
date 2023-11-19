@@ -1,5 +1,6 @@
-## Greeting from Sophia Davis: 
 ***Hello, world!***
+
+My name is Sophia Davis. I am a third-year studying computer science at UCSD. Welcome to my lab reports page! Below are all of the current lab reports completed for CSE 15L. Class taken Fall of 2023. Thanks for stopping by! 
 
 ## Lab Reports:
 1. [Lab Report 1](https://sadsoap.github.io/cse15l-lab-reports/LabReport1.html)
